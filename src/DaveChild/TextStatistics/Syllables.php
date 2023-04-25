@@ -358,8 +358,10 @@ class Syllables
         $intSyllableCount = 0;
         $intWordCount = Text::wordCount($strText, $strEncoding);
         $arrWords = explode(' ', $strText);
-        for ($i = 0; $i < $intWordCount; $i++) {
-            $intSyllableCount += self::syllableCount($arrWords[$i], $strEncoding);
+        for ($i = 0; $i < count($arrWords); $i++) {
+            if(isset($arrWords[$i])) {
+                $intSyllableCount += self::syllableCount($arrWords[$i], $strEncoding);
+            }
         }
         $averageSyllables = (Maths::bcCalc($intSyllableCount, '/', $intWordCount));
         return $averageSyllables;
