@@ -1,7 +1,7 @@
 {
-    "name": "davechild/textstatistics",
+    "name": "kokomomtl/textstatistics",
     "description": "PHP package to measure the readability of text according to various algorithms.",
-    "homepage": "https://github.com/DaveChild/Text-Statistics",
+    "homepage": "https://github.com/kokomomtl/Text-Statistics",
     "authors": [
         {
             "name": "Dave Child",
